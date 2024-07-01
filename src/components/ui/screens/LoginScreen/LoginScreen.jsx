@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ToastMessage, { ToastType } from '../../common/ToastMessage/ToastMessage'
 
 const LoginScreen = () => {
-  return (
-    <div className='bg-red-500'>LoginScreen</div>
-  )
+    const [showToast, setShowToast] = useState(false);
+
+    return (
+        <div className=''>
+            <button onClick={() => setShowToast(true)}>Show Toast</button>
+            <ToastMessage
+                showToast={showToast}
+                closeToast={() => setShowToast(false)}
+                type={ToastType.ERROR}
+            />
+        </div>
+    )
 }
 
 export default LoginScreen

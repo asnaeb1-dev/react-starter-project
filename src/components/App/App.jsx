@@ -4,7 +4,7 @@ import Routes from '../Routes/Routes'
 
 const App = () => {
 	return (
-		<div className=' bg-blue-400'>
+		<div className=' '>
 			<Routes />
 		</div>
 	)

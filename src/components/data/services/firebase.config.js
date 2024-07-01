@@ -1,0 +1,3 @@
+/**
+ * PASTE FIREBASE CONFIG HERE
+ */
